@@ -15,15 +15,17 @@ Scalaz HTTP is a principled functional programming library for building typesafe
 
 ## Competition
 
-|   |Http4s|Akka-Http|Finch|Rho<sup><a name="footnote">1</a></sup>|
-|---|:-:|:-:|:-:|:-:|
-|purely functional|✓|𐄂|𐄂|✓|
-|no macros or reflection|✓|𐄂|𐄂|𐄂|
-|scalaz compatability|𐄂|𐄂|𐄂|𐄂|
-|client generation|𐄂|𐄂|𐄂|𐄂|
-|documentation generation|𐄂|𐄂|𐄂|𐄂|
+|   |Http4s|Akka-Http|Finch|Rho<sup><a name="footnote">1</a></sup>|Typedapi|
+|---|:-:|:-:|:-:|:-:|:-:|
+|purely functional|✓|𐄂|𐄂|✓|✓|
+|no macros or reflection|✓|𐄂|𐄂|𐄂|𐄂<sup><a name="footnote">2</a></sup>|
+|scalaz compatability|𐄂|𐄂|𐄂|𐄂|✓<sup><a name="footnote">3</a></sup>|
+|client generation|𐄂|𐄂|𐄂|𐄂|✓|
+|documentation generation|𐄂|𐄂|𐄂|𐄂|𐄂|
 
-<sup>[1](#footnote)</sup> Rho is a DSL for creating HTTP endpoints with Http4s
+<sup>[1](#footnote)</sup> Rho is a DSL for creating HTTP endpoints with Http4s</br>
+<sup>[2](#footnote)</sup> Typedapi relies on shapeless, therefore uses Macros indirectly</br>
+<sup>[3](#footnote)</sup> Typedapi is independent of any HTTP/library implementation
 
 ## Background
 * [servant](https://haskell-servant.readthedocs.io/en/stable/principles.html) (Haskell)
